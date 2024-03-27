@@ -9,11 +9,13 @@ const MainCardComponent = (props:{
     NumberOfLow:string
 }) => {
   return (
-    <div>
-      <div>
+    <>
+    </>
+    // <div className={`${numberCurrentTempature}`}>
+    //   <div>
         
-      </div>
-    </div>
+    //   </div>
+    // </div>
   )
 }
 
