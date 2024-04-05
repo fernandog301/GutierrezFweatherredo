@@ -9,11 +9,11 @@ import {
 import { GeoLocation } from "../../DataService/Interfaces";
 import Favorites from "../../Assets/bookmark-simple.png";
 import CloudFoggy from "../../Assets/cloud-fog.png";
-import CloudRainy from "../Assets/cloud-rain.png";
+import CloudRainy from "../../Assets/cloud-rain.png";
 import CloudSnowing from "../../Assets/cloud-snow.png";
-import Cloudy from "../Assets/cloud.png";
-import Sun from "../Assets/sun.png";
-import SearchIcon from "../Assets/magnifying-glass.png";
+import Cloudy from "../../Assets/cloud.png";
+import Sun from "../../Assets/sun.png";
+import SearchIcon from "../../Assets/magnifying-glass.png";
 import { StaticImageData } from "next/image";
 import { Day5Forecast } from "@/app/DataService/FiveDayForcast";
 import UnFav from "../../Assets/bookmark-simple-fill.png";
@@ -324,7 +324,7 @@ const HomePageComponent = () => {
       case "thunderstorm with drizzle":
         setMedWeatherIcon(CloudRainy);
         break;
-      case "thunderstorm with heavy drizzle":
+      case "thunderstorm with heavy drizzle" :
         setMedWeatherIcon(CloudRainy);
         break;
       default:
@@ -353,9 +353,9 @@ const HomePageComponent = () => {
     setToggleBool(!toggleBool);
   };
 
-  function renderForecastDays(): React.ReactNode {
-    throw new Error("Function not implemented.");
-  }
+  // function renderForecastDays(): React.ReactNode {
+  //   throw new Error("Function not implemented.");
+  // }
 
   return (
     <div className="backgroundImage font-[Inter]">
@@ -466,9 +466,9 @@ const HomePageComponent = () => {
           </div>
           <hr className="mt-[95px] mb-[41px] " />
           <div className="grid-flow-row pb-5">
-            <div className="flex justify-between flex-col md:flex-row">
+            {/* <div className="flex justify-between flex-col md:flex-row">
               {renderForecastDays()}
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
